@@ -1,0 +1,149 @@
+
+/* the div around each portfolio element*/
+.work {
+  position: relative;
+  float: left;
+  width: 40%;
+  margin: 20px 15px 25px;
+  overflow: auto;
+}
+
+.work:nth-child(even) {
+  margin-right: 50px;
+}
+
+.work img {
+  width: 100%;
+  border: 0 none;
+  opacity: 0.8;
+}
+
+.work h3 {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #fff;
+  text-align: center;
+  background: #4aaaa5;
+}
+
+.noOutline {
+    border-right: none;
+  }
+
+/*for some reason when it's set to "absolute" 
+it rests in the middle of the page.*/
+footer {
+  position: relative;
+}
+
+/* Responsive */
+@media screen and (max-width: 980px) {
+  .main {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .mainBody {
+    width: 50%;
+    margin: 45px auto; 
+    margin-right: 15px;
+
+  }
+
+  .connect {
+    width: 30%;
+    margin: 45px auto; 
+    margin-left: 15px;
+  }
+
+  .portfolio {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .work {
+    width: 90%;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+  display: flex;
+  flex-direction: column;
+  }
+
+  .mainBody, .connect {
+    width: 90%;
+    margin: 75px auto 10px; 
+  }
+
+  .work {
+    position: relative;
+    float: left;
+    width: 40%;
+    margin: 20px 15px 25px;
+    overflow: auto;
+  }
+
+  .connect {
+    margin: 15px auto 30px;
+  }
+
+}
+
+@media screen and (max-width: 640px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  .blueBox {
+    width: 100%;
+    text-align: center;
+  }
+
+  nav {
+    width: 100%;
+    padding-top: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 640px;
+    padding: 15px;
+    margin: 0 auto;
+    margin-left: 30px;
+  }
+
+  nav a {
+    padding-right: 75px;
+  }
+
+  .mainBody, .connect {
+    width: 90%;
+    margin: 75px auto 10px; 
+  }
+
+  .portfolio {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .connect {
+    margin: 15px auto 30px;
+  }
+
+  .work {
+    width: 90%;
+  }
+
